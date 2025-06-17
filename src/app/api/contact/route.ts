@@ -1,59 +1,34 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import SMTPTransport from 'nodemailer/lib/smtp-transport';
 
 export async function POST(request: Request) {
-  const body = await request.json();
-  const { firstName, lastName, email, phone, subject, message, token } = body;
-
-  if (!token) {
-    return NextResponse.json({ success: false, message: 'No reCAPTCHA token provided' }, { status: 400 });
-  }
-
-  const secretKey = process.env.RECAPTCHA_SECRET_KEY;
-  const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${token}`;
-
   try {
-    const response = await fetch(verificationUrl, { method: 'POST' });
-    const data = await response.json();
+    const { name, email, message } = await request.json();
 
-    if (!data.success || data.score < 0.5) {
-      return NextResponse.json({ success: false, message: 'Failed reCAPTCHA verification' }, { status: 400 });
+    if (!name || !email || !message) {
+      return NextResponse.json({ success: false, message: 'Champs requis manquants' }, { status: 400 });
     }
-  } catch (error) {
-    console.error('reCAPTCHA verification error:', error);
-    return NextResponse.json({ success: false, message: 'reCAPTCHA verification failed' }, { status: 500 });
-  }
 
-  // ✅ Transporteur SMTP avec typage
-  const transporter = nodemailer.createTransport({
-    host: "sandbox.smtp.mailtrap.io",
-    port: 2525,
-    auth: {
-      user: process.env.MAILTRAP_USER || "677200e2654607",
-      pass: process.env.MAILTRAP_PASS || "7ce8bcbbeee257"
-    }
-  } as SMTPTransport.Options);
-
-  try {
-    await transporter.sendMail({
-      from: `"Website Contact" <${process.env.EMAIL_USER || 'no-reply@example.com'}>`,
-      to: 'info@marcosrodrigues.ca',
-      subject: `New Contact Form Submission - ${subject}`,
-      html: `
-        <h3>Contact Form</h3>
-        <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Subject:</strong> ${subject}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
-      `,
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
     });
 
-    return NextResponse.json({ success: true });
+    const mailOptions = {
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_RECEIVER,
+      subject: `Contact de ${name}`,
+      text: `Nom: ${name}\nEmail: ${email}\nMessage: ${message}`,
+    };
+
+    await transporter.sendMail(mailOptions);
+
+    return NextResponse.json({ success: true, message: 'Email envoyé avec succès' });
   } catch (error) {
-    console.error('Email error:', error);
-    return NextResponse.json({ success: false, message: 'Email failed to send' }, { status: 500 });
+    console.error(error);
+    return NextResponse.json({ success: false, message: 'Erreur lors de l\'envoi' }, { status: 500 });
   }
 }

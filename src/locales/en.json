@@ -1,0 +1,18 @@
+{
+  "Header": {
+    "home": "Home",
+    "mentorship": "Mentorship",
+    "contact": "Contact",
+    "cv": "Curriculum Vitae",
+    "title": "My Website",
+    "welcome": "Welcome"
+  
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "telephone": "Phone",
+    "subject": "Subject"
+  }
+}

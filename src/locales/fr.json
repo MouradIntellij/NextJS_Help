@@ -1,0 +1,13 @@
+{
+  "Header": {
+    "title": "Mon Site Web",
+    "welcome": "Bienvenue"
+  },
+  "Contact": {
+    "title": "Contactez-nous",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "telephone": "Téléphone",
+    "subject": "Sujet"
+  }
+}
