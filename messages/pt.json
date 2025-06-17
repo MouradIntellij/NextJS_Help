@@ -1,0 +1,271 @@
+{
+    "Header": {
+        "home": "Home",
+        "clinical": "Clínica",
+        "education": "Educação",
+        "business": "Gestão",
+        "mentorship": "Mentoria",
+        "contact": "Contato",
+        "cv": "Meu Currículo"
+    },
+    "Footer": {
+        "home": "Home",
+        "clinical": "Clínica",
+        "education": "Educação",
+        "business": "Gestão",
+        "mentorship": "Mentoria",
+        "contact": "Contato",
+        "cv": "Meu Currículo"
+    },
+    "Home": {
+        "hero": "Compaixão com Desempenho",
+        "whyMarcos1": "Porque Marcos?",
+        "whyMarcos2": "Marcos é mais do que um profissional experiente — ele é uma ponte entre cuidado, conhecimento e estratégia. Com mais de 20 anos de experiência em prática clínica, educação e liderança empresarial, ele reúne uma combinação rara de habilidades que geram impacto em todos os níveis: no indivíduo, no sistema e no futuro da saúde.",
+        "heading": "Especialidades",
+        "areas": {
+            "clinical": "Clínica",
+            "education": "Educação",
+            "business": "Gestão"
+        },
+        "descriptions": {
+            "clinical": "Cuidado compassivo para todos",
+            "education": "Moldando o futuro por meio da educação",
+            "business": "Desempenho com responsabilidade"
+        },
+        "knowMore": "Saiba mais",
+        "social": "Acompanhe minha vida",
+        "quote": "Um homem que trabalha para se aperfeiçoar nunca pode errar, de modo que, mesmo quando erra, não está errando contra si mesmo.",
+        "author": "Marcos Rodrigues"
+    },
+    "Clinical": {
+        "hero": "Clínica",
+        "title1": "Destaques",
+        "highlights": {
+            "item1": {
+                "title": "21 anos de experiência em fisioterapia domiciliar complexa",
+                "description": "Oferecendo reabilitação personalizada em Muskoka, com forte ênfase em pacientes neurológicos, ortopédicos e pós-cirúrgicos."
+            },
+            "item2": {
+                "title": "Fundador de um modelo de residência em fisioterapia",
+                "description": "Projetado para atrair e reter talentos em áreas carentes, oferecendo mentoria, apoio com moradia e desenvolvimento clínico estruturado."
+            },
+            "item3": {
+                "title": "Liderança em gestão interprofissional de casos complexos",
+                "description": "Especialista em trabalhar ao lado de médicos, enfermeiros, terapeutas ocupacionais e assistentes de apoio pessoal para gerenciar clientes de alto risco, incluindo casos de AVC e cuidados paliativos."
+            }
+        },
+        "title2": "Estudos de caso",
+        "caseStudies": {
+            "item1": {
+                "title": "Recuperando a independência após um AVC",
+                "description": "Um paciente idoso, acamado após um AVC, recuperou parte da mobilidade e independência por meio de um protocolo intensivo de neurorreabilitação domiciliar, liderado e coordenado por diversos profissionais."
+            },
+            "item2": {
+                "title": "Evitando a institucionalização de longo prazo",
+                "description": "Um paciente frágil e de alto risco conseguiu permanecer em casa com um plano personalizado de prevenção de quedas e fortalecimento, minimizando hospitalizações e melhorando a qualidade de vida."
+            },
+            "item3": {
+                "title": "Gestão crítica de alta hospitalar",
+                "description": "Foi implementado um plano de cuidados para um paciente pós-cirúrgico que recebeu alta precoce do hospital, garantindo uma recuperação tranquila e prevenindo complicações por meio de cuidados e orientações em casa."
+            }
+        },
+        "quote": "Eles podem esquecer seu nome, mas nunca esquecerão como você os fez se sentir.",
+        "author": "Maya Angelou"
+    },
+    "Education": {
+        "hero": "Educação",
+        "title1": "Destaques",
+        "highlights": {
+            "item1": {
+                "title": "Educador e Desenvolvedor de Cursos",
+                "description": "Experiência como professor e facilitador de programas de educação interprofissional, especialmente na Universidade McGill."
+            },
+            "item2": {
+                "title": "Especialista em Ensino Clínico e Mentoria",
+                "description": "Mentoria prática para estudantes de fisioterapia e profissionais formados internacionalmente em transição para o sistema canadense."
+            },
+            "item3": {
+                "title": "Defensor da Colaboração Interprofissional",
+                "description": "Ministrou palestras e workshops destacando o cuidado colaborativo entre fisioterapeutas e outros profissionais da saúde."
+            }
+        },
+        "title2": "Estudos de Caso",
+        "caseStudies": {
+            "item1": {
+                "title": "Workshop de Colaboração entre Cinesiologia e Fisioterapia",
+                "description": "Conduziu uma sessão universitária onde estudantes de cinesiologia aprenderam seu papel na reabilitação pós-aguda sob a estrutura da fisioterapia, com demonstrações ao vivo e dramatizações."
+            },
+            "item2": {
+                "title": "Mentoria para Fisioterapeutas Formados no Exterior",
+                "description": "Apoiou fisioterapeutas formados no Brasil em sua transição para a prática canadense, orientando-os tanto na atualização técnica quanto na integração cultural."
+            },
+            "item3": {
+                "title": "Desenvolvimento de Curso",
+                "description": "Propôs e estruturou o currículo de um curso sobre colaboração em casos complexos, integrando exemplos reais de atendimento domiciliar."
+            }
+        },
+        "quote": "O início da sabedoria é a admissão da própria ignorância. Todo o meu saber consiste em saber que nada sei.",
+        "author": "Sócrates"
+    },
+    "Business": {
+        "hero": "Gestão",
+        "title1": "Destaques",
+        "slides": {
+            "item1": {
+                "title": "🔍 Por que “Bridging the Gap”?",
+                "subHeading": "Porque é nas lacunas que a transformação começa.",
+                "content": "Na área da saúde, há uma lacuna entre o hospital e o lar, entre a evidência e a prática, e entre as necessidades dos pacientes e a disponibilidade dos serviços.\nNa educação, há uma lacuna entre o que os profissionais aprendem na escola e o que enfrentam no mundo real.\nNos negócios, há uma lacuna entre os sistemas operacionais e a liderança humana, com propósito.",
+                "finish": "A BTG Intelligence existe para preencher essas lacunas — com clareza, compaixão e competência."
+            },
+            "item2": {
+                "title": "🧠 Por que “Intelligence”?",
+                "subHeading": "Porque não basta agir — é preciso ter discernimento.",
+                "content": "A BTG Intelligence integra:\nInteligência Clínica: Com base em mais de 20 anos de atuação direta na linha de frente da saúde, com ampla experiência em sistemas complexos de cuidados domiciliares.\nInteligência Educacional: Especialização em aprendizagem de adultos, mentoria profissional, design de currículos e colaboração interprofissional.\nInteligência Empresarial: Pensamento estratégico adquirido com um MBA em gestão de pessoas e sustentabilidade organizacional, permitindo que você lidere a transformação — e não apenas sobreviva a ela."
+            },
+            "item3": {
+                "title": "✨ O que a BTG Intelligence oferece?",
+                "subHeading": "A BTG Intelligence oferece soluções, treinamentos e consultoria em três áreas-chave:",
+                "content": "Inovação em Saúde & Consultoria de Sistemas → De programas de residência à otimização do cuidado domiciliar, ajudamos organizações a desenhar modelos de atenção escaláveis e centrados nas pessoas.\nDesenvolvimento Profissional & Educação → Desenvolvemos e oferecemos cursos, programas de mentoria e palestras que capacitam profissionais a prosperar com propósito e confiança.\nLiderança Estratégica & Transformação Cultural → Aconselhamos líderes e equipes sobre como construir culturas de alta confiança e orientadas por propósito, que atraem e retêm os melhores talentos."
+            },
+            "item4": {
+                "title": "🧭 A Filosofia BTG",
+                "subHeading": "“Preenchemos a lacuna não apenas com conhecimento, mas com amor, presença e serviço.”",
+                "content": "Seja você uma organização de saúde em busca de uma consultoria visionária, um profissional que deseja crescer com propósito ou um líder pronto para construir um sistema melhor — a BTG Intelligence está aqui para ajudar você a preencher essa lacuna.",
+                "finish": "Nosso trabalho não é apenas transacional. É transformador."
+            }
+        },
+        "highlights": {
+            "item1": {
+                "title": "MBA em Gestão Estratégica de Pessoas e Organizações Sustentáveis",
+                "description": "Oferece uma base sólida para alinhar excelência clínica com estratégia organizacional e liderança."
+            },
+            "item2": {
+                "title": "Fundador da BTG Intelligence",
+                "description": "Uma iniciativa de consultoria que conecta prática clínica, educação e negócios — especializada em casos complexos, desenvolvimento de equipes e programas de mentoria."
+            },
+            "item3": {
+                "title": "Inovador em Estratégias de Retenção de Profissionais de Saúde",
+                "description": "Criou um programa multifacetado que combina incentivos financeiros, educacionais e de mentoria para atrair profissionais para áreas remotas."
+            }
+        },
+        "title2": "Estudos de Caso",
+        "caseStudies": {
+            "item1": {
+                "title": "Projeto-piloto de Residência para Suprir Lacunas na Força de Trabalho",
+                "description": "Desenvolveu um plano de negócios para um programa de residência em fisioterapia, abordando recrutamento e retenção por meio de mentoria e incentivos de moradia."
+            },
+            "item2": {
+                "title": "Modelo de Parceria com Clínicas",
+                "description": "Propôs soluções autônomas para clínicas com poucos recursos e sem expertise em gestão de casos complexos, oferecendo apoio em liderança e atendimento prático."
+            },
+            "item3": {
+                "title": "Proposta de Unidade Interprofissional para AVC",
+                "description": "Projetou um modelo escalável para uma unidade de AVC baseada em equipe multidisciplinar, integrando financiamento, equipe e métricas de cuidado baseadas em resultados."
+            }
+        },
+        "quote": "O sucesso parece estar ligado à ação. Pessoas bem-sucedidas continuam em movimento. Elas cometem erros, mas não desistem.",
+        "author": "Conrad Hilton"
+    },
+    "Mentorship": {
+        "hero": "Mentoria",
+        "TextSection": {
+            "title": "Eleve sua Prática com Mentoria",
+            "subtitle": "Orientação personalizada para profissionais da saúde que desejam crescer com confiança, propósito e impacto.",
+            "highlight1": "Mentoria é mais do que orientação — é um catalisador de transformação.",
+            "paragraph1": "No cenário atual da saúde, em constante evolução, o conhecimento clínico por si só já não é suficiente. Lidar com casos complexos, desenvolver habilidades de liderança, adaptar-se às mudanças sistêmicas e alinhar valores pessoais com o crescimento profissional exige um apoio mais profundo e sábio. É aí que entra a mentoria.",
+            "paragraph2": "Segundo pesquisas, profissionais de saúde com acesso à mentoria são mais confiantes, resilientes e eficazes em seus papéis (Sambunjak et al., 2006; Straus et al., 2013). Esteja você no início da carreira ou em busca de novos rumos após anos de prática, a mentoria oferece um espaço para reflexão, estratégia e avanço.",
+            "heading": "Por que Mentoria com Marcos?",
+            "paragraph3": "Com mais de duas décadas de experiência em fisioterapia no Brasil e no Canadá, aliadas a uma sólida formação acadêmica em cuidado clínico, educação e liderança estratégica, ofereço uma perspectiva única e abrangente à mentoria.",
+            "list": {
+                "item1": {
+                    "strong": "🎓 Educador:",
+                    "description": "Ajudei a formar e orientar estudantes, profissionais internacionais e novos líderes na área da saúde por meio de ensino formal e supervisão clínica."
+                },
+                "item2": {
+                    "strong": "🩺 Clínico:",
+                    "description": "Especializado em fisioterapia domiciliar para casos complexos, compreendo as nuances do atendimento real e da colaboração interprofissional."
+                },
+                "item3": {
+                    "strong": "📊 Líder:",
+                    "description": "Minha formação inclui um MBA em Gestão Estratégica e a criação de programas-piloto que conectam cuidado clínico com pensamento sistêmico sustentável."
+                }
+            },
+            "paragraph4": "Seja você alguém lidando com casos clínicos complexos, transições de carreira, esgotamento ou novas ambições ousadas, minha mentoria foi criada para apoiar sua clareza, coragem e excelência clínica.",
+            "callToAction": "Pronto para começar?",
+            "paragraph5": "Preencha o formulário abaixo e vamos explorar como a mentoria pode ajudá-lo a preencher a lacuna entre onde você está e onde deveria estar."
+        },
+        "FormSection": {
+            "title": "Formulário de Contato para Mentoria",
+            "subtitle": "Vamos iniciar a conversa.",
+            "basicInfoLegend": "🧾 Informações Básicas",
+            "fullName": "Nome Completo (obrigatório)",
+            "email": "Endereço de E-mail (obrigatório)",
+            "phone": "Número de Telefone (opcional)",
+            "profession": "Profissão/Cargo (obrigatório)",
+            "professionOther": "Se marcou 'Outro', por favor especifique",
+            "experience": "Anos de Experiência na Área da Saúde (obrigatório)",
+            "uploadCV": "Envie seu currículo (opcional)",
+            "goalsLegend": "🎯 Objetivos da Mentoria",
+            "other": "Outro",
+            "describe": "Descreva sua situação atual e o que espera alcançar com a mentoria (obrigatório)",
+            "availabilityLegend": "📆 Disponibilidade e Formato",
+            "availability": "Dias/Horários Preferidos para a Mentoria",
+            "availabilityPlaceholder": "ex.: \"Noites após as 18h\", \"Fins de semana\"",
+            "finalLegend": "💬 Observações Finais",
+            "referral": "Como ficou sabendo deste programa de mentoria?",
+            "comments": "Outros comentários ou perguntas?",
+            "submit": "Enviar",
+            "select": "Selecione...",
+            "professions": [
+                "Fisioterapeuta",
+                "Enfermeiro(a)",
+                "Cinesiologista",
+                "Massoterapeuta",
+                "Terapeuta Esportivo",
+                "Médico(a)",
+                "Estudante",
+                "Pesquisador(a)",
+                "Outro"
+            ],
+            "goals": [
+                "Desenvolvimento de habilidades clínicas",
+                "Gestão de casos complexos",
+                "Desenvolvimento em gestão de equipes",
+                "Orientação de carreira e liderança",
+                "Negócios/empreendedorismo em saúde",
+                "Transição para o sistema de saúde canadense (para profissionais internacionais)"
+            ],
+            "formats": [
+                "Sessões virtuais individuais",
+                "Sessões de mentoria em grupo",
+                "Apoio assíncrono/por e-mail",
+                "Presencial (se disponível)"
+            ],
+            "referralOptions": [
+                "Website",
+                "Instagram",
+                "Indicação verbal",
+                "LinkedIn",
+                "Recomendação",
+                "Outro"
+            ]
+        }
+    },
+    "Contact": {
+        "hero": "Contato",
+        "title": "Entre em Contato",
+        "firstName": "Nome",
+        "lastName": "Sobrenome",
+        "telephone": "Telefone",
+        "subject": "Assunto",
+        "items": [
+            "Clínica",
+            "Educação",
+            "Negócios",
+            "Outros"
+        ],
+        "message": "Mensagem",
+        "submit": "Enviar",
+        "details": "Informações de Contato"
+    }
+}

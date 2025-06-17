@@ -1,0 +1,34 @@
+/*Citation div*/
+#citation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  color:#363636;
+  padding: 4rem 2rem;
+  min-height: 30vh;
+  background-color: #f9f9f9;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+.citation-wrapper {
+  max-width: 800px;
+  width: 100%;
+}
+
+#citation h2 {
+  font-style: italic;
+  font-size: 150%;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+#citation p {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: bold;
+  text-align: right;
+  margin: 0;
+}

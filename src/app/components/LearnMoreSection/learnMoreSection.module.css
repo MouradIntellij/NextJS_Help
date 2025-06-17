@@ -1,0 +1,44 @@
+.section {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #3772ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #333;
+  }
+
+  @media (max-width: 768px) {
+    .section{
+      height: 25vh;
+    }
+    .heading{
+      font-size: 2.5rem;
+    }
+    .button{
+      font-size: 1.8rem;
+    }
+  }
+  

@@ -1,0 +1,466 @@
+/* section1 - Welcome */
+#section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: radial-gradient(
+    circle at 80% 45%,   
+    rgb(26,25,22) 0%,   
+    rgb(24,23,21) 5%,     
+    rgb(23,22,20) 10%,    
+    rgb(22,21,19) 15%, 
+    rgb(21,20,18) 20%, 
+    rgb(19,19,17) 25%,   
+    rgb(18,17,16) 30%,   
+    rgb(17,17,15) 35%,     
+    rgb(16,16,14) 40%,    
+    rgb(15,15,13) 45%,     
+    rgb(14,14,12) 50%,     
+    rgb(13,13,11) 55%,    
+    rgb(12,12,10) 60%,   
+    rgb(11,11,9) 65%, 
+    rgb(10,10,8) 70%,    
+    rgb(9,9,7) 75%,    
+    rgb(8,8,6) 80%,    
+    rgb(7,7,5) 85%,    
+    rgb(6,6,4) 90%,    
+    rgb(5,5,3) 95%,    
+    rgb(4,4,2) 100%
+  );
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+#section1 .text-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+  padding-right: 5rem;
+}
+
+#section1 img {
+  width: 40%;
+  height: auto;
+  object-fit: contain;
+}
+
+#section1 h1 {
+  font-size: 400%;
+  margin: 0;
+  padding: 0.3rem;
+}
+
+#section1 h2 {
+  font-size: 200%;
+  color: #b0b0b0;
+}
+
+#section1 p {
+  font-size: 150%;
+  margin: 0;
+  padding: 2rem;
+  text-align: justify;
+}
+
+/* Section 2 - Why Marcos?*/
+#section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  color: #fff8f8;
+}
+
+#section2 h1 {
+  font-size: 300%;
+  margin-bottom: 2rem;
+}
+
+#section2 p {
+  font-size: 150%;
+  text-align: justify;
+  max-width: 900px;
+  padding-bottom: 1rem;
+}
+
+/* Section 3 - Expertise */
+#section3 {
+  position: relative;
+  color: #363636;
+  background-color: rgba(212, 212, 212, 0.658);
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+.expertise-heading-wrapper {
+  position: relative;
+  z-index: 2;
+  margin-bottom: -4rem;
+  top: 2rem;
+}
+
+.expertise-heading {
+  font-size: 3rem;
+  display: inline-block;
+  padding: 0 2rem;
+  z-index: 2;
+  position: relative;
+}
+
+.expertise-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Important:  add position: relative for reference for children absolute */
+.expertise-box {
+  position: relative; /* Necessary for overlay */
+  flex: 1 1 33.333%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.expertise-box h1 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  position: relative;
+}
+
+/* Background for each box */
+.expertise-box.education {
+  background-image: url('/imgs/education.jpg');
+}
+
+.expertise-box.clinical {
+  background-image: url('/imgs/clinical.png');
+}
+
+.expertise-box.business {
+  background-image: url('/imgs/business2.png');
+}
+
+.expertise-box:hover {
+  transform: scale(1.05);
+  background-color: rgba(224, 224, 224, 0.8);
+}
+
+/* Overlay */
+.expertise-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.85);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  padding: 2rem;
+  text-align: center;
+  z-index: 5;
+  pointer-events: none; /* Not to block hover */
+}
+
+/* Display overlay */
+.expertise-box:hover .expertise-overlay {
+  opacity: 1;
+  pointer-events: auto; /* Allow click while overlay */
+}
+
+/* Botão "Saiba mais" */
+.learn-more-button {
+  margin-top: 1rem;
+  background-color: rgba(0, 86, 179, 0.3);
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.learn-more-button:hover {
+  background-color: rgba(0, 86, 179, 0.7);
+}
+
+/* Section 4 - Keep up with me*/
+#section4 {
+  text-align: center;
+  color: #363636;
+  padding: 2rem;
+}
+
+#section4 h1 {
+  margin-bottom: 4rem;
+  font-size: 300%;
+  padding-top: 1rem;
+}
+
+.social-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-box {
+  width: 350px;
+  height: 350px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+  background: none;
+}
+
+.social-box img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.social-box:hover {
+  transform: scale(1.05);
+  background: none;
+}
+
+.social-box:hover img {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  #section1 {
+    height: auto;
+    min-height: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #section1 .text-content {
+    width: 55%;
+    padding-right: 1rem;
+  }
+
+  #section1 img {
+    width: 45%;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  #section1 h1 {
+    font-size: 180%;
+    line-height: 1.2;
+  }
+
+  #section1 h2 {
+    font-size: 120%;
+  }
+
+  #section1 p {
+    font-size: 110%;
+    padding: 1rem 0;
+    line-height: 1.4;
+  }
+
+  #section2 {
+    padding: 2rem 1rem;
+    text-align: justify;
+  }
+
+  #section2 h1 {
+    font-size: 200%;
+    margin-bottom: 1.5rem;
+  }
+
+  #section2 p {
+    font-size: 140%;
+    max-width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  #section3 {
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+  }
+
+  #section3 h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #section3 p {
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+
+  #section3 a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* make the button invisible */
+    z-index: 10; /* allows click over the content */
+  }
+
+  .expertise-heading-wrapper {
+    display: none;
+  }
+
+  .expertise-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .expertise-box {
+    width: 100%;        
+    height: 200px;       
+    font-size: 1.4rem;
+    margin: 0;
+    max-width: none;     
+    border-radius: 0;    
+  }
+  
+  #section4 {
+    padding: 2rem 1rem;
+  }
+
+  #section4 h1 {
+    font-size: 200%;
+    margin-bottom: 1.5rem;
+  }
+
+  .social-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .social-box {
+    width: 100%;
+    height: 140px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .social-box img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+  }
+
+  #citation {
+    font-size: 0.9rem;
+  }
+
+  #citation p {
+    flex: 0;
+  }
+  
+
+  @media (max-width: 480px) {
+    #section1 {
+      flex-wrap: wrap;
+    }
+    
+    #section1 .text-content,
+    #section1 img {
+      width: 100%;
+    }
+    
+    #section1 img {
+      margin-bottom: 1.5rem;
+    }
+
+    .expertise-box {
+      min-width: 220px;
+      height: 220px;
+    }
+    
+    .social-grid {
+      gap: 1rem;
+    }
+    
+    .social-box {
+      height: 120px;
+      font-size: 1.1rem;
+    }
+
+      /* Section 3 - Expertise */
+    .expertise-box {
+      min-width: 220px;
+      height: 200px;
+      font-size: 1.1rem;
+    }
+
+    .expertise-box h1 {
+      font-size: 1.3rem;
+    }
+
+    .social-box {
+      height: 120px;
+      font-size: 1rem;
+      padding: 0.5rem;
+      overflow: hidden;
+    }
+
+    .social-box img {
+      max-width: 90%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}

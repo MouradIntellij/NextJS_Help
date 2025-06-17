@@ -1,0 +1,271 @@
+{
+    "Header": {
+        "home": "Home",
+        "clinical": "Clinical",
+        "education": "Education",
+        "business": "Business",
+        "mentorship": "Mentorship",
+        "contact": "Contact",
+        "cv": "My Curriculum"
+    },
+    "Footer": {
+        "home": "Home",
+        "clinical": "Clinical",
+        "education": "Education",
+        "business": "Business",
+        "mentorship": "Mentorship",
+        "contact": "Contact",
+        "cv": "My Curriculum"
+    },
+    "Home": {
+        "hero": "Compassion with Performance",
+        "whyMarcos1": "Why Marcos?",
+        "whyMarcos2": "Marcos is more than a seasoned professional—he’s a bridge between care, knowledge, and strategy. With over 20 years of experience across clinical practice, education, and business leadership, he brings a rare combination of skills that deliver impact at every level: the individual, the system, and the future of healthcare...",
+        "heading": "Expertise",
+        "areas": {
+            "clinical": "Clinical",
+            "education": "Education",
+            "business": "Business"
+        },
+        "descriptions": {
+            "clinical": "Compassionate care for all",
+            "education": "Shaping the future through education",
+            "business": "Performance with Accountability"
+        },
+        "knowMore": "Know More",
+        "social": "Keep up with me",
+        "quote": "A man who works on perfecting himself can never go wrong so that even when he is wrong he is not wronging himself.",
+        "author": "Marcos Rodrigues"
+    },
+    "Clinical": {
+        "hero": "Clínica",
+        "title1": "Destaques",
+        "highlights": {
+            "item1": {
+                "title": "21 Years of Experience in Complex Home-Care Physiotherapy",
+                "description": "Delivering personalized rehabilitation in Muskoka, with a strong emphasis on neurological, orthopedic, and post-surgical patients."
+            },
+            "item2": {
+                "title": "Founder of a Physiotherapy Residency Model",
+                "description": "Designed to attract and retain talent in underserved areas, offering mentorship, housing support, and structured clinical development."
+            },
+            "item3": {
+                "title": "Leadership in Interprofessional Complex Case Management",
+                "description": "Skilled in working alongside physicians, nurses, OTs, and PSWs to manage high-risk clients, including stroke and palliative care cases."
+            }
+        },
+        "title2": "Estudos de caso",
+        "caseStudies": {
+            "item1": {
+                "title": "Restoring Independence Post-Stroke",
+                "description": "An elderly patient, bedridden post-stroke, regained partial mobility and independence through an intensive, home-based neurorehabilitation protocol led and coordinated across multiple providers."
+            },
+            "item2": {
+                "title": "Avoiding Long-Term Institutionalization",
+                "description": "A frail, high-risk patient was able to stay at home with a customized fall-prevention and strengthening plan, minimizing hospitalizations and improving quality of life."
+            },
+            "item3": {
+                "title": "Critical Discharge Management",
+                "description": "Implemented a care plan for a post-surgical client discharged early from the hospital, ensuring smooth recovery and preventing complications through home-based care and education."
+            }
+        },
+        "quote": "They may forget your name, but they will never forget how you made them feel.",
+        "author": "Maya Angelou"
+    },
+    "Education": {
+        "hero": "Education",
+        "title1": "Highlights",
+        "highlights": {
+            "item1": {
+                "title": "Educator and Course Developer",
+                "description": "Experience as a lecturer and facilitator for interprofessional education programs, especially at McGill University."
+            },
+            "item2": {
+                "title": "Specialist in Clinical Teaching & Mentorship",
+                "description": "Facilitated hands-on mentorship for physiotherapy students and internationally educated professionals transitioning into the Canadian system."
+            },
+            "item3": {
+                "title": "Advocate for Interprofessional Collaboration",
+                "description": "Delivered lectures and workshops highlighting collaborative care between physiotherapists and allied health professionals."
+            }
+        },
+        "title2": "Case Studies",
+        "caseStudies": {
+            "item1": {
+                "title": "Kinesiology-Physiotherapy Collaboration Workshop",
+                "description": "Led a university session where kinesiology students learned their role in post-acute rehab under the physiotherapy framework, with live demonstrations and role-play."
+            },
+            "item2": {
+                "title": "Mentorship for Internationally Trained PTs",
+                "description": "Supported Brazilian-trained physiotherapists transitioning into Canadian practice, guiding them through both technical upskilling and cultural integration."
+            },
+            "item3": {
+                "title": "Course Design",
+                "description": "Proposed and structured the curriculum for a course on complex case collaboration integrating real-world home-care examples."
+            }
+        },
+        "quote": "The beginning of wisdom is the admission of one's own ignorance. All my knowledge consists in knowing that I know nothing.",
+        "author": "Socrates"
+    },
+    "Business": {
+        "hero": "Business",
+        "title1": "Highlights",
+        "slides": {
+            "item1": {
+                "title": "🔍 Why “Bridging the Gap”?",
+                "subHeading": "Because gaps are where transformation begins.",
+                "content": "In healthcare, there’s a gap between hospital and home, evidence and practice, and patient needs and service availability.\nIn education, there’s a gap between what professionals learn in school and what they face in the real world.\nIn business, there’s a gap between operational systems and human-centered, purpose-driven leadership.",
+                "finish": "BTG Intelligence exists to bridge those gaps—with clarity, compassion, and competence."
+            },
+            "item2": {
+                "title": "🧠 Why “Intelligence”?",
+                "subHeading": "Because you don’t just need action—you need insight.",
+                "content": "BTG Intelligence integrates:\nClinical Intelligence: Grounded in 20+ years of frontline healthcare delivery, with deep experience in complex home-care systems.\nEducational Intelligence: Expertise in adult learning, professional mentoring, curriculum design, and interprofessional collaboration.\nBusiness Intelligence: Strategic thinking drawn from an MBA in people and organizational sustainability, enabling you to lead transformation—not just survive it."
+            },
+            "item3": {
+                "title": "✨ What Does BTG Intelligence Offer?",
+                "subHeading": "BTG Intelligence offers solutions, training, and consulting in three key areas:",
+                "content": "Healthcare Innovation & Systems Consulting → From residency programs to home-care optimization, we help organizations design people-centered, scalable care models.\nProfessional Development & Education → We design and deliver courses, mentorship programs, and speaking engagements that empower professionals to thrive with purpose and confidence.\nStrategic Leadership & Culture Transformation → We advise leaders and teams on how to build high-trust, mission-driven cultures that attract and retain top talent."
+            },
+            "item4": {
+                "title": "🧭 The BTG Philosophy",
+                "subHeading": "“We bridge the gap not just with knowledge, but with love, presence, and service.”",
+                "content": "Whether you're a healthcare organization needing a visionary consultant, a professional looking to grow with purpose, or a leader ready to build a better system—BTG Intelligence is here to help you bridge the gap.",
+                "finish": "Our work is not transactional. It’s transformational."
+            }
+        },
+        "highlights": {
+            "item1": {
+                "title": "MBA in Strategic People Management & Sustainable Organizations",
+                "description": "Offers a strong foundation in aligning clinical excellence with organizational strategy and leadership."
+            },
+            "item2": {
+                "title": "Founder of BTG Intelligence",
+                "description": "A consultancy initiative that bridges clinical practice, education, and business — specializing in complex case consulting, staff development, and mentoring programs."
+            },
+            "item3": {
+                "title": "Innovator in Health Workforce Retention Strategies",
+                "description": "Created a multifaceted program that combines financial, educational, and mentoring incentives to attract clinicians to remote areas."
+            }
+        },
+        "title2": "Case Studies",
+        "caseStudies": {
+            "item1": {
+                "title": "Residency Pilot to Solve Workforce Gaps",
+                "description": "Developed a business case for a physiotherapy residency program, addressing recruitment/retention through mentorship and housing incentives."
+            },
+            "item2": {
+                "title": "Clinic Partnership Model",
+                "description": "Proposed freelance solutions to under-resourced clinics lacking expertise in complex case management, offering leadership support and hands-on care."
+            },
+            "item3": {
+                "title": "Interprofessional Stroke Unit Business Proposal",
+                "description": "Designed a scalable model for a multidisciplinary team-based stroke unit, integrating funding, staffing, and outcome-based care metrics."
+            }
+        },
+        "quote": "Success seems to be connected with action. Successful people keep moving. They make mistakes, but they don't quit.",
+        "author": "Conrad Hilton"
+    },
+    "Mentorship": {
+        "hero": "Mentorship",
+        "TextSection": {
+            "title": "Elevate Your Practice Through Mentorship",
+            "subtitle": "Personalized guidance for clinicians and healthcare professionals who want to grow with confidence, purpose, and impact.",
+            "highlight1": "Mentorship is more than guidance—it's a catalyst for transformation.",
+            "paragraph1": "In today’s rapidly evolving healthcare landscape, clinical knowledge alone is no longer enough. Navigating complex cases, developing leadership skills, adapting to system changes, and aligning personal values with professional growth all demand deeper, wiser support. That's where mentorship steps in.",
+            "paragraph2": "According to research, healthcare professionals with access to mentorship are more confident, resilient, and effective in their roles (Sambunjak et al., 2006; Straus et al., 2013). Whether you're early in your career or seeking new direction after years in practice, mentorship provides a space for reflection, strategy, and forward motion.",
+            "heading": "Why Mentorship with Marcos?",
+            "paragraph3": "With over two decades of physiotherapy experience across Brazil and Canada, combined with a strong academic foundation in clinical care, education, and strategic leadership, I bring a unique 360-degree perspective to mentorship.",
+            "list": {
+                "item1": {
+                    "strong": "🎓 Educator:",
+                    "description": "I’ve helped train and guide students, international professionals, and emerging leaders in healthcare through formal teaching and clinical coaching."
+                },
+                "item2": {
+                    "strong": "🩺 Clinician:",
+                    "description": "Specializing in complex home-care physiotherapy, I understand the nuances of real-world healthcare delivery and interprofessional collaboration."
+                },
+                "item3": {
+                    "strong": "📊 Leader:",
+                    "description": "My background includes an MBA in Strategic Management and the creation of pilot programs that bridge clinical care with sustainable systems thinking."
+                }
+            },
+            "paragraph4": "Whether you're navigating complex patient cases, career transitions, burnout, or bold new ambitions, my mentorship is designed to support your clarity, courage, and clinical excellence.",
+            "callToAction": "Ready to begin?",
+            "paragraph5": " Fill out the form below and let’s explore how mentorship can help you bridge the gap between where you are and where you’re meant to be."
+        },
+        "FormSection": {
+            "title": "Mentorship Contact Form",
+            "subtitle": "Let’s start the conversation.",
+            "basicInfoLegend": "🧾 Basic Information",
+            "fullName": "Full Name (required)",
+            "email": "Email Address (required)",
+            "phone": "Phone Number (optional)",
+            "profession": "Profession/Title (required)",
+            "professionOther": "If 'Other', please specify",
+            "experience": "Years of Experience in Healthcare (required)",
+            "uploadCV": "Upload your CV (optional)",
+            "goalsLegend": "🎯 Mentorship Goals (select all that apply)",
+            "other": "Other",
+            "describe": "Please describe your current situation and what you’re hoping to gain from mentorship (required)",
+            "availabilityLegend": "📆 Availability & Format",
+            "availability": "Preferred Days/Times for Mentorship",
+            "availabilityPlaceholder": "e.g., \"Evenings after 6PM\", \"Weekends\"",
+            "finalLegend": "💬 Final Notes",
+            "referral": "How did you hear about this mentorship program?",
+            "comments": "Any other comments or questions?",
+            "submit": "Submit",
+            "select": "Select...",
+            "professions": [
+              "Physiotherapist",
+              "Nurse",
+              "Kinesiologist",
+              "Massage Therapist",
+              "Athletic Therapist",
+              "MD",
+              "Student",
+              "Researcher",
+              "Other"
+            ],
+            "goals": [
+                "Clinical skill development",
+                "Complex case management",
+                "Team Management development",
+                "Career guidance and leadership",
+                "Business/entrepreneurship in healthcare",
+                "Transition to Canadian healthcare (for international professionals)"
+            ],
+            "formats": [
+                "One-on-one virtual sessions",
+                "Group mentorship sessions",
+                "Asynchronous/email support",
+                "In-person (if available)"
+            ],
+            "referralOptions": [
+                "Website",
+                "Instagram",
+                "Word of Mouth",
+                "LinkedIn",
+                "Referral",
+                "Other"
+            ]
+        }
+    },
+    "Contact": {
+        "hero": "Contact",
+        "title": "Get in Touch",
+        "firstName":"First Name",
+        "lastName":"Last Name",
+        "telephone":"Telephone",
+        "subject":"Subject",
+        "items": [
+            "Clinical",
+            "Education",
+            "Business",
+            "Others"
+        ],
+        "message":"Message",
+        "submit":"Submit",
+        "details":"Contact Details"
+    }
+}

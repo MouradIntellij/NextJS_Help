@@ -1,0 +1,212 @@
+.contactMain {
+  padding: 6rem;
+}
+
+.contactTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contactForm {
+  min-width: 47%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.formRow {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.formRow h2 {
+  margin-left: 1rem;
+  margin-bottom: -1rem;
+}
+
+.formRow input,
+.formRow textarea {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.formRow input::placeholder,
+.formRow textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.formRow textarea {
+  resize: vertical;
+  height: 140px;
+}
+
+.subjectOptions {
+  flex: 1;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+}
+
+.subjectOptions label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #eeeeee;
+  margin-bottom: 0.5rem;
+}
+
+.radioLabel {
+  padding: 0.6rem 1.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.radioLabel input[type="radio"] {
+  appearance: none;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.radioLabel input[type="radio"]:checked + span {
+  font-weight: 600;
+}
+
+.radioLabel:hover {
+  background-color: #3772ff;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.selected {
+  background-color: #3772ff;
+  border-color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+}
+
+.submitButton {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 1rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.contactInfo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+.contactInfo h3 {
+  font-size: 2rem
+}
+
+.infoItems {
+  line-height: 1.8;
+  margin: 0.2rem 0;
+  color: #dddddd;
+}
+
+/* Medium screens */
+@media (max-width: 1024px) {
+  .contactMain {
+    padding: 4rem 3rem;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactForm {
+    width: 90%;
+  }
+
+  .formRow h2 {
+    margin-left: 1rem;
+    margin-bottom: -0.5rem;
+  }
+
+  .contactInfo {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactTitle {
+    font-size: 1.8rem;
+  }
+
+  .formRow input,
+  .formRow textarea {
+    font-size: 1rem;
+  }
+
+  .subjectGroup label {
+    font-size: 1.5rem;
+  }
+
+  .contactInfo{
+    display: none;
+  }
+}
+
+/* Tablets & smaller */
+@media (max-width: 768px) {
+  .contactMain {
+    padding: 3rem 1rem;
+  }
+
+  .contactForm{
+    width:100%;
+    gap: 1.3rem;
+  }
+
+  .subjectOptions label {
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: #eeeeee;
+    margin-bottom: 0.5rem;
+  }
+
+  .contactTitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+
+
