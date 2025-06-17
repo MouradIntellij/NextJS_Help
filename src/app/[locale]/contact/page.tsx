@@ -32,27 +32,27 @@ export default function ContactForm() {
   };
  
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus('sending');
- 
-    try {
-      const res = await fetch('/api/sendEmail', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
- 
-      if (res.ok) {
-        setStatus('success');
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        setStatus('error');
-      }
-    } catch (err) {
+  e.preventDefault();
+  setStatus('sending');
+
+  try {
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+
+    if (res.ok) {
+      setStatus('success');
+      setFormData({ name: '', email: '', message: '' });
+    } else {
       setStatus('error');
     }
-  };
- 
+  } catch (err) {
+    setStatus('error');
+  }
+};
+
   return (
 <form onSubmit={handleSubmit}>
 <input name="name" value={formData.name} onChange={handleChange} placeholder="Name" required />

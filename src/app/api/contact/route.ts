@@ -1,34 +1,31 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
   try {
     const { name, email, message } = await request.json();
 
-    if (!name || !email || !message) {
-      return NextResponse.json({ success: false, message: 'Champs requis manquants' }, { status: 400 });
-    }
-
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: process.env.EMAIL_HOST,
+      port: Number(process.env.EMAIL_PORT),
+      secure: true,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
     });
 
-    const mailOptions = {
-      from: process.env.EMAIL_USER,
+    await transporter.sendMail({
+      from: `"${name}" <${email}>`,
       to: process.env.EMAIL_RECEIVER,
-      subject: `Contact de ${name}`,
-      text: `Nom: ${name}\nEmail: ${email}\nMessage: ${message}`,
-    };
+      subject: `New contact from ${name}`,
+      text: message,
+      html: `<p>${message}</p>`,
+    });
 
-    await transporter.sendMail(mailOptions);
-
-    return NextResponse.json({ success: true, message: 'Email envoyé avec succès' });
+    return NextResponse.json({ message: 'Email sent' });
   } catch (error) {
-    console.error(error);
-    return NextResponse.json({ success: false, message: 'Erreur lors de l\'envoi' }, { status: 500 });
+    console.error('Error sending email:', error);
+    return NextResponse.json({ message: 'Error sending email' }, { status: 500 });
   }
 }
