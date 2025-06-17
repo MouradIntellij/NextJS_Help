@@ -1,18 +1,16 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import SMTPTransport from 'nodemailer/lib/smtp-transport'; // 👈 nécessaire pour le typage
 
-// Configuration du transporteur (extrait pour réutilisation)
+// ✅ Transporteur configuré correctement
 const transporter = nodemailer.createTransport({
   host: "sandbox.smtp.mailtrap.io",
   port: 2525,
   auth: {
     user: process.env.MAILTRAP_USER || "677200e2654607",
-    auth: {
-      user: process.env.MAILTRAP_USER || "677200e2654607",
-      pass: process.env.MAILTRAP_PASS || "7ce8bcbbeee257"
-    }
+    pass: process.env.MAILTRAP_PASS || "7ce8bcbbeee257"
   }
-});
+} as SMTPTransport.Options); // 👈 forçage du bon type SMTP
 
 export async function POST(request: Request) {
   try {
