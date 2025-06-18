@@ -1,8 +1,14 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './formSection.module.css';
 import { useTranslations } from 'next-intl';
+
+declare global {
+  interface Window {
+    grecaptcha: any;
+  }
+}
 
 export default function FormSection() {
   const [subject, setSubject] = useState('');
@@ -16,6 +22,18 @@ export default function FormSection() {
 
   const t = useTranslations('Contact');
 
+  // Charger reCAPTCHA une seule fois côté client
+  useEffect(() => {
+    if (typeof window !== 'undefined' && !document.getElementById('recaptcha-script')) {
+      const script = document.createElement('script');
+      script.id = 'recaptcha-script';
+      script.src = 'https://www.google.com/recaptcha/api.js';
+      script.async = true;
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -24,14 +42,23 @@ export default function FormSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    if (typeof window === 'undefined') return;
+
+    const token = window.grecaptcha?.getResponse();
+
+    if (!token) {
+      alert('Please verify you are not a robot!');
+      return;
+    }
+
     const res = await fetch('/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ ...formData, subject }),
+      body: JSON.stringify({ ...formData, subject, token }),
     });
 
     if (res.ok) {
-      alert('✅ Message sent!');
+      alert('Message sent!');
       setFormData({
         firstName: '',
         lastName: '',
@@ -40,8 +67,9 @@ export default function FormSection() {
         message: '',
       });
       setSubject('');
+      window.grecaptcha?.reset();
     } else {
-      alert('❌ Error sending message.');
+      alert('Error sending message.');
     }
   };
 
@@ -63,7 +91,6 @@ export default function FormSection() {
               required
             />
           </div>
-
           <div className={styles.formRow}>
             <input
               type="text"
@@ -74,7 +101,6 @@ export default function FormSection() {
               required
             />
           </div>
-
           <div className={styles.formRow}>
             <input
               type="email"
@@ -85,7 +111,6 @@ export default function FormSection() {
               required
             />
           </div>
-
           <div className={styles.formRow}>
             <input
               type="tel"
@@ -126,6 +151,12 @@ export default function FormSection() {
               required
             ></textarea>
           </div>
+
+          {/* reCAPTCHA v2 */}
+          <div
+            className="g-recaptcha"
+            data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+          ></div>
 
           <div className={styles.formRow}>
             <button type="submit" className={styles.submitButton}>

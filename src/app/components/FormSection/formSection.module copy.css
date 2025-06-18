@@ -1,7 +1,5 @@
 .contactMain {
   padding: 6rem;
-  min-height: 100vh;
-  background-color: #121212; /* Dark background for contrast */
 }
 
 .contactTitle {
@@ -16,26 +14,23 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 2rem;
 }
 
 .contactForm {
   min-width: 47%;
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 1.4rem;
 }
 
 .formRow {
   display: flex;
   gap: 1.5rem;
-  width: 100%;
 }
 
 .formRow h2 {
   margin-left: 1rem;
   margin-bottom: -1rem;
-  color: #ffffff;
 }
 
 .formRow input,
@@ -43,12 +38,10 @@
   flex: 1;
   padding: 1rem;
   font-size: 1.2rem;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.05);
   color: #ffffff;
   border-radius: 8px;
-  outline-offset: 2px;
-  transition: border-color 0.3s ease;
 }
 
 .formRow input::placeholder,
@@ -56,15 +49,9 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.formRow input:focus,
-.formRow textarea:focus {
-  border-color: #3772ff;
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
 .formRow textarea {
   resize: vertical;
-  min-height: 140px;
+  height: 140px;
 }
 
 .subjectOptions {
@@ -85,13 +72,11 @@
 
 .radioLabel {
   padding: 0.6rem 1.3rem;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease;
-  display: flex;
-  align-items: center;
 }
 
 .radioLabel input[type="radio"] {
@@ -104,36 +89,34 @@
 }
 
 .radioLabel input[type="radio"]:checked + span {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .radioLabel:hover {
   background-color: #3772ff;
-  border-color: #5591ff;
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
 .selected {
   background-color: #3772ff;
-  border-color: #5591ff;
-  font-weight: 700;
-  color: white;
+  border-color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
 }
 
 .submitButton {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
   padding: 1rem 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 8px;
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease, border-color 0.3s ease;
-  align-self: flex-start;
 }
 
 .submitButton:hover {
-  background-color: #3772ff;
-  border-color: #5591ff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
 .contactInfo {
@@ -142,17 +125,21 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
+  height: 100%;
   font-size: 1.6rem;
-  color: #dddddd;
 }
 
 .contactInfo h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2rem
 }
 
-/* Responsive */
+.infoItems {
+  line-height: 1.8;
+  margin: 0.2rem 0;
+  color: #dddddd;
+}
 
+/* Medium screens */
 @media (max-width: 1024px) {
   .contactMain {
     padding: 4rem 3rem;
@@ -187,28 +174,39 @@
     font-size: 1rem;
   }
 
-  .contactInfo {
-    display: none; /* Hide contact info on smaller screens */
+  .subjectGroup label {
+    font-size: 1.5rem;
+  }
+
+  .contactInfo{
+    display: none;
   }
 }
 
+/* Tablets & smaller */
 @media (max-width: 768px) {
   .contactMain {
     padding: 3rem 1rem;
   }
 
-  .contactForm {
-    width: 100%;
+  .contactForm{
+    width:100%;
     gap: 1.3rem;
   }
 
   .subjectOptions label {
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    color: #eeeeee;
+    margin-bottom: 0.5rem;
   }
 
   .contactTitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
 }
+
+
+
