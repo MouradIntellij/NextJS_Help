@@ -6,19 +6,30 @@ export async function POST(request: NextRequest) {
     const { firstName, lastName, email, phone, message, subject } = await request.json();
 
     const transporter = nodemailer.createTransport({
-      service: 'gmail', // ✅ Utiliser 'gmail' simplifie la config avec Gmail SMTP
+      host: process.env.EMAIL_HOST,
+      port: Number(process.env.EMAIL_PORT),
+      secure: true,
       auth: {
-        user: process.env.EMAIL_USER, // ✅ Ton adresse Gmail (dans .env.local)
-        pass: process.env.EMAIL_PASS, // ✅ Mot de passe d'application généré (pas ton vrai mot de passe)
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
     const fullName = `${firstName} ${lastName}`;
 
     const mailOptions = {
-      from: `"${fullName}" <${process.env.EMAIL_USER}>`, // ✅ Email authentifié (Gmail), pas celui de l'expéditeur
-      to: process.env.EMAIL_RECEIVER,                   // ✅ Celui que tu veux recevoir (Gmail ou Hotmail ou autre)
+      from: `"${fullName}" <${email}>`,
+      to: process.env.EMAIL_RECEIVER,
       subject: `New Contact Request - ${subject}`,
+      text: `
+Subject: ${subject}
+From: ${fullName}
+Email: ${email}
+Phone: ${phone || 'N/A'}
+
+Message:
+${message}
+      `,
       html: `
         <h3>New Contact Request</h3>
         <p><strong>Subject:</strong> ${subject}</p>
@@ -35,6 +46,6 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ message: '✅ Email sent successfully' });
   } catch (error) {
     console.error('Email sending error:', error);
-    return NextResponse.json({ message: '❌ Failed to send email', error }, { status: 500 });
+    return NextResponse.json({ message: '❌ Failed to send email' }, { status: 500 });
   }
 }
